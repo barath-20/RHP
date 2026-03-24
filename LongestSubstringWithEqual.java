@@ -9,7 +9,7 @@ class Main{
         int maxLen = 0;
         for(int i=0;i<n;i++){
             char ch = s.charAt(i);
-            ctr += (ch=='a')?1:-1;
+            ctr += (ch=='0')?1:-1;
             if(fom.containsKey(ctr)){
                 maxLen = Math.max(maxLen, i - fom.get(ctr));
             }
@@ -21,8 +21,8 @@ class Main{
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int tc = sc.nextInt();
-        sc.nextLine();
+        int tc = 1;//sc.nextInt();
+        //sc.nextLine();
         while(tc-->0){
             solve(sc);
         }
