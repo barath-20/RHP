@@ -1,1 +1,1 @@
-
+for(int x: segmentTree) System.out.print(x+" ");
